@@ -3,7 +3,7 @@ from weights import *
 weights = [np.array(i) for i in weights]
 
 def N(x, ax=2):
-    return (x-x.mean(axis=ax, keepdims=True))/x.std(axis=ax, keepdims=True)
+    return (x-x.mean(axis=ax, keepdims=True))/(x.std(axis=ax, keepdims=True)+1e-6)
 
 def conv3d_pad(inputs, filters, strides=[1, 1, 1], padding="SAME"):
     B, C_in, D, H, W = inputs.shape
