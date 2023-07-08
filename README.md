@@ -2,7 +2,7 @@
 A small neural model implemented with numpy, which can be used for embedded devices.  
 
 ## Model
-The model is trained on the PURE dataset using the JAX framework, then all weights are extracted and the network architecture is re-implemented with numpy. For a detailed evaluation of this model, please refer to [PhysBench](https://github.com/KegangWangCCNU/PhysBench).  
+The model is trained on the PURE dataset using the JAX framework, a total of 169 parameters are stored in float32., then all weights are extracted and the network architecture is re-implemented with numpy. For a detailed evaluation of this model, please refer to [PhysBench](https://github.com/KegangWangCCNU/PhysBench).  
 ## Additional processing  
 This code does not currently include preprocessing and postprocessing parts. It is recommended to use OpenCV for face detection, and scale it to 8x8 resolution using area average sampling (cv2.INTER_AREA). The model uses (Batch, Depth, 8, 8, 3) RGB input and outputs (Batch, Depth) BVP waveforms. This code does not currently include filters and heart rate extraction algorithms.
 
