@@ -1,5 +1,5 @@
 # Fast-rPPG
-A small neural model implemented with numpy, which can be used for embedded devices.  
+NoobHeart model implemented with numpy, which can be used for embedded devices.  
 
 ## Model
 The model is trained on the PURE dataset using the JAX framework, a total of 169 parameters are stored in float32, then all weights are extracted and the network architecture is re-implemented with numpy. For a detailed evaluation of this model, please refer to [PhysBench](https://github.com/KegangWangCCNU/PhysBench).  
